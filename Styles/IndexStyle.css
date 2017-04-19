@@ -15,7 +15,7 @@ h1 {
 /* A table whos width between columns is 50% */
 table {
     border-collapse: collapse;
-    width: 50%;
+    width: 30%;
 }
 
 /* Indentation and colour of borders of the Columns */
@@ -27,5 +27,7 @@ th, td {
 
 /* Puts the div with tab id at center (540px away from the left margin) */
 #tab {
-    margin-left: 540px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
