@@ -1,0 +1,66 @@
+<html>
+	<head>
+	<link rel = "stylesheet" href = "Styles/Style.css">
+	</head>
+	<body>
+<script src="JavaScript/ButtonScript.js"></script>
+<form action="Index.htm"> 	<button>Homepage</button>	</form>  
+ <h2>Parent.h</h2>
+  <hr/>
+<div class = "indent">
+<h3>Dependencies:</h3> </div> <div id = "box">
+  <a href="Child.h.htm">Child.h</a>  <a href="Child2.h.htm">Child2.h</a>  </div>
+	<hr/>
+ <div class = "indent"> <h3>Code:</h3> 
+	</div><pre><div id = "box">
+#ifndef SCOPESTACK_H
+#define SCOPESTACK_H
+#pragma once
+
+
+#include "Child2.h"
+#include "Child.h"
+#include "Invalid.h"
+#include &lt;list&gt;
+
+
+namespace parent1
+{<button onclick="myFunction('1')">[-]</button> <div id ="1"> 
+	namespace parent2
+	{<button onclick="myFunction('2')">[-]</button> <div id ="2"> 
+		template&lt;typename T&gt;
+		class Parent {<button onclick="myFunction('3')">[-]</button> <div id ="3"> 
+			using namespace ChildTest;
+		public:
+			void push(const T& item);
+			T pop();
+		private:
+			data d;
+			std::list&lt;T&gt; stack;
+			Child child;
+</div>		};
+
+
+		template&lt;class T&gt;
+		void Parent&lt;T&gt;::push(const T& item)
+		{<button onclick="myFunction('4')">[-]</button> <div id ="4"> 
+			stack.push_back(item);
+</div>		}
+
+		template&lt;class T&gt;
+		T Parent&lt;T&gt;::pop()
+		{<button onclick="myFunction('5')">[-]</button> <div id ="5"> 
+			T item = stack.back();
+			stack.pop_back();
+			globalData++;
+			return item;
+</div>		}
+</div>	}
+
+</div>}
+#endif
+
+</pre>
+ </div>
+	</body>
+	</html>

@@ -1,0 +1,36 @@
+ body {
+      margin: 20px;
+      color: black;
+      background-color: #eee;
+      font-family: Consolas;
+      font-weight: 600;
+      font-size: 110%;
+    }
+
+    /* This class maintains indentation */
+    .indent {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    h4 {
+      margin-bottom: 3px;
+      margin-top: 3px;
+    }
+	
+/* The heading 3 in my  design should be onto the box, so gave a negative spacing */
+    h3 {
+ 	margin-bottom: -12px;
+	}
+
+/* Div to create a box with white background and indentation */
+    #box {
+   	 background-color: white;
+   	 border: 25px black;
+  	  padding: 25px;
+  	  margin: 25px;
+	}
+
+
+
+

@@ -1,0 +1,92 @@
+<html>
+	<head>
+	<link rel = "stylesheet" href = "Styles/Style.css">
+	</head>
+	<body>
+<script src="JavaScript/ButtonScript.js"></script>
+<form action="Index.htm"> 	<button>Homepage</button>	</form>  
+ <h2>Child.h</h2>
+  <hr/>
+<div class = "indent">
+<h3>Dependencies:</h3> </div> <div id = "box">
+  <a href="Child.cpp.htm">Child.cpp</a>  <a href="Child2.h.htm">Child2.h</a>  </div>
+	<hr/>
+ <div class = "indent"> <h3>Code:</h3> 
+	</div><pre><div id = "box">
+#ifndef CHILD_H
+#define CHILD_H
+
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;map&gt;
+
+
+int globalData = 10;
+
+namespace ChildTest {<button onclick="myFunction('1')">[-]</button> <div id ="1"> 
+	
+	struct element {<button onclick="myFunction('2')">[-]</button> <div id ="2"> 
+		std::string name, type;
+		int start_line, end_line;
+		std::vector&lt;element&gt; children;
+</div>	};
+	enum Numbers {<button onclick="myFunction('3')">[-]</button> <div id ="3"> </div> one = 1, two, three, four };
+	class Child {<button onclick="myFunction('4')">[-]</button> <div id ="4"> 
+	public:
+		Child() {<button onclick="myFunction('5')">[-]</button> <div id ="5"> </div>};
+		~Child() {<button onclick="myFunction('6')">[-]</button> <div id ="6"> </div>};
+		void inlineMethod(int a) {<button onclick="myFunction('7')">[-]</button> <div id ="7"> 
+			int i;
+			for (i = 0; i &lt; 2; i++) {<button onclick="myFunction('8')">[-]</button> <div id ="8"> 
+				std::cout &lt;&lt; a;
+				if (i == 1)
+				{<button onclick="myFunction('9')">[-]</button> <div id ="9"> 
+					std::cout &lt;&lt; i;
+</div>				}
+</div>			}
+			if (i == 1) {<button onclick="myFunction('10')">[-]</button> <div id ="10"> 
+				std::cout &lt;&lt; a;
+</div>			}
+			else
+			{<button onclick="myFunction('11')">[-]</button> <div id ="11"> 
+</div>			}
+</div>		}
+		int method1();
+		int method3();
+		int method2()
+		{<button onclick="myFunction('12')">[-]</button> <div id ="12"> 
+			std::cout &lt;&lt; "Hello OOD";
+			return 0;
+</div>		}
+		int method4();
+</div>	};
+	
+
+
+	static void globalFunction() {<button onclick="myFunction('13')">[-]</button> <div id ="13"> 
+		std::map&lt;int, int&gt; map = {<button onclick="myFunction('14')">[-]</button> <div id ="14">  {<button onclick="myFunction('15')">[-]</button> <div id ="15"> </div> 1,1 },{<button onclick="myFunction('16')">[-]</button> <div id ="16"> </div> 2,2 }</div> };
+		while (true) {<button onclick="myFunction('17')">[-]</button> <div id ="17"> 
+			{<button onclick="myFunction('18')">[-]</button> <div id ="18"> 
+				std::cout &lt;&lt; "\n Global Function";
+</div>			}
+			break;
+</div>		}
+</div>	}
+</div>}
+
+static void globalFunction1() {<button onclick="myFunction('19')">[-]</button> <div id ="19"> 
+	std::map&lt;int, int&gt; map = {<button onclick="myFunction('20')">[-]</button> <div id ="20">  {<button onclick="myFunction('21')">[-]</button> <div id ="21"> </div> 1,1 },{<button onclick="myFunction('22')">[-]</button> <div id ="22"> </div> 2,2 }</div> };
+	while (true) {<button onclick="myFunction('23')">[-]</button> <div id ="23"> 
+		{<button onclick="myFunction('24')">[-]</button> <div id ="24"> 
+			std::cout &lt;&lt; "\n Global Function";
+</div>		}
+		break;
+</div>	}
+</div>}
+#endif
+
+
+</pre>
+ </div>
+	</body>
+	</html>

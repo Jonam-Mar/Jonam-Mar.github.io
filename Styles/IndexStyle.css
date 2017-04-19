@@ -1,0 +1,31 @@
+ body {
+      margin: 20px;
+      color: black;
+      background-color: #eee;
+      font-family: Consolas;
+      font-weight: 600;
+      font-size: 120%;
+    }
+
+/* Main heading at the center of the page */
+h1 {
+    text-align: center;
+}
+
+/* A table whos width between columns is 50% */
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+/* Indentation and colour of borders of the Columns */
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Puts the div with tab id at center (540px away from the left margin) */
+#tab {
+    margin-left: 540px;
+}
